@@ -311,9 +311,9 @@ public class MainAct extends TcnMainActivity {
 		menu_lift_ship_slot = (ButtonEditSelectD) findViewById(R.id.menu_lift_ship_slot);
 		if (menu_lift_ship_slot != null) {
 			menu_lift_ship_slot.setButtonType(ButtonEditSelectD.BUTTON_TYPE_EDIT_QUERY);
-			menu_lift_ship_slot.setButtonName("出货例子");
+			menu_lift_ship_slot.setButtonName("Shipping example");
 			menu_lift_ship_slot.setButtonNameTextSize(TcnVendIF.getInstance().getFitScreenSize(20));
-			menu_lift_ship_slot.setButtonQueryText("出货");
+			menu_lift_ship_slot.setButtonQueryText("Ship");
 			menu_lift_ship_slot.setButtonQueryTextSize(TcnVendIF.getInstance().getFitScreenSize(16));
 			menu_lift_ship_slot.setButtonQueryTextColor("#ffffff");
 			menu_lift_ship_slot.setButtonDisplayTextColor("#4e5d72");
@@ -325,9 +325,9 @@ public class MainAct extends TcnMainActivity {
 		menu_lift_ship_slot_test = (ButtonEditSelectD) findViewById(R.id.menu_lift_ship_slot_test);
 		if (menu_lift_ship_slot_test != null) {
 			menu_lift_ship_slot_test.setButtonType(ButtonEditSelectD.BUTTON_TYPE_EDIT_QUERY);
-			menu_lift_ship_slot_test.setButtonName("测试货道");
+			menu_lift_ship_slot_test.setButtonName("Test cargo lane");
 			menu_lift_ship_slot_test.setButtonNameTextSize(TcnVendIF.getInstance().getFitScreenSize(20));
-			menu_lift_ship_slot_test.setButtonQueryText("测试");
+			menu_lift_ship_slot_test.setButtonQueryText("test");
 			menu_lift_ship_slot_test.setButtonQueryTextSize(TcnVendIF.getInstance().getFitScreenSize(16));
 			menu_lift_ship_slot_test.setButtonQueryTextColor("#ffffff");
 			menu_lift_ship_slot_test.setButtonDisplayTextColor("#4e5d72");
@@ -339,9 +339,9 @@ public class MainAct extends TcnMainActivity {
 		menu_lift_reqselect = (ButtonEditSelectD) findViewById(R.id.menu_lift_reqselect);
 		if (menu_lift_reqselect != null) {
 			menu_lift_reqselect.setButtonType(ButtonEditSelectD.BUTTON_TYPE_EDIT_QUERY);
-			menu_lift_reqselect.setButtonName("选择货道");
+			menu_lift_reqselect.setButtonName("Select cargo lane");
 			menu_lift_reqselect.setButtonNameTextSize(TcnVendIF.getInstance().getFitScreenSize(20));
-			menu_lift_reqselect.setButtonQueryText("选择");
+			menu_lift_reqselect.setButtonQueryText("choose");
 			menu_lift_reqselect.setButtonQueryTextSize(TcnVendIF.getInstance().getFitScreenSize(16));
 			menu_lift_reqselect.setButtonQueryTextColor("#ffffff");
 			menu_lift_reqselect.setButtonDisplayTextColor("#4e5d72");
@@ -1230,7 +1230,7 @@ public class MainAct extends TcnMainActivity {
 						if ((UIComBack.HEAT_COOL_OFF_SWITCH_SELECT[0]).equals(strParamSecond)) {
 							String temp = menu_lift_set_heat_cool_temp.getText().toString();
 							if (!TcnVendIF.getInstance().isNumeric(temp)) {
-								TcnUtilityUI.getToast(MainAct.this, "请填入温度值");
+								TcnUtilityUI.getToast(MainAct.this, "Please enter the temperature value");
 								return;
 							}
 
@@ -1242,7 +1242,7 @@ public class MainAct extends TcnMainActivity {
 						} else if ((UIComBack.HEAT_COOL_OFF_SWITCH_SELECT[1]).equals(strParamSecond)) {
 							String temp = menu_lift_set_heat_cool_temp.getText().toString();
 							if (!TcnVendIF.getInstance().isNumeric(temp)) {
-								TcnUtilityUI.getToast(MainAct.this, "请填入温度值");
+								TcnUtilityUI.getToast(MainAct.this, "Please enter the temperature value");
 								return;
 							}
 //                            TcnVendIF.getInstance().reqTemperControl(-1,strParamSecond,Integer.parseInt(temp),
@@ -1279,14 +1279,14 @@ public class MainAct extends TcnMainActivity {
 								if ((UIComBack.HEAT_COOL_OFF_SWITCH_SELECT[0]).equals(strParamSecond)) {
 									String temp = menu_lift_set_heat_cool_temp.getText().toString();
 									if (!TcnVendIF.getInstance().isNumeric(temp)) {
-										TcnUtilityUI.getToast(MainAct.this, "请填入温度值");
+										TcnUtilityUI.getToast(MainAct.this, "Please enter the temperature value");
 										return;
 									}
 									TcnVendIF.getInstance().reqOpenCoolSpring(UIComBack.getInstance().getGroupElevatorId(strParam),Integer.parseInt(temp));
 								} else if ((UIComBack.HEAT_COOL_OFF_SWITCH_SELECT[1]).equals(strParamSecond)) {
 									String temp = menu_lift_set_heat_cool_temp.getText().toString();
 									if (!TcnVendIF.getInstance().isNumeric(temp)) {
-										TcnUtilityUI.getToast(MainAct.this, "请填入温度值");
+										TcnUtilityUI.getToast(MainAct.this, "Please enter the temperature value");
 										return;
 									}
 									TcnVendIF.getInstance().reqHeatSpring(UIComBack.getInstance().getGroupElevatorId(strParam),Integer.parseInt(temp));
@@ -1306,7 +1306,7 @@ public class MainAct extends TcnMainActivity {
 							if ((UIComBack.HEAT_COOL_OFF_SWITCH_SELECT[0]).equals(strParamSecond)) {
 								String temp = menu_lift_set_heat_cool_temp.getText().toString();
 								if (!TcnVendIF.getInstance().isNumeric(temp)) {
-									TcnUtilityUI.getToast(MainAct.this, "请填入温度值");
+									TcnUtilityUI.getToast(MainAct.this, "Please enter the temperature value");
 									return;
 								}
 //                                TcnVendIF.getInstance().reqTemperControl(-1,strParamSecond,Integer.parseInt(temp),
@@ -1315,7 +1315,7 @@ public class MainAct extends TcnMainActivity {
 							} else if ((UIComBack.HEAT_COOL_OFF_SWITCH_SELECT[1]).equals(strParamSecond)) {
 								String temp = menu_lift_set_heat_cool_temp.getText().toString();
 								if (!TcnVendIF.getInstance().isNumeric(temp)) {
-									TcnUtilityUI.getToast(MainAct.this, "请填入温度值");
+									TcnUtilityUI.getToast(MainAct.this, "Please enter the temperature value");
 									return;
 								}
 //                                TcnVendIF.getInstance().reqTemperControl(-1,strParamSecond,Integer.parseInt(temp),
@@ -1622,7 +1622,7 @@ public class MainAct extends TcnMainActivity {
 					//打开串口错误，一般是串口配置出错
 					break;
 				case TcnVendEventID.COMMAND_SELECT_GOODS:  //选货成功
-					TcnUtilityUI.getToast(MainAct.this, "选货成功");
+					TcnUtilityUI.getToast(MainAct.this, "Selection successful");
 					break;
 				case TcnVendEventID.COMMAND_INVALID_SLOTNO:
 					TcnUtilityUI.getToast(MainAct.this, getString(R.string.ui_base_notify_invalid_slot), 22).show();
@@ -1683,9 +1683,9 @@ public class MainAct extends TcnMainActivity {
 					break;
 				case TcnVendEventID.CMD_READ_DOOR_STATUS:  //门动作上报
 					if (TcnVendEventResultID.DO_CLOSE == cEventInfo.m_lParam1) {   //关门
-						TcnUtilityUI.getToast(MainAct.this, "关门", 20).show();
+						TcnUtilityUI.getToast(MainAct.this, "close the door", 20).show();
 					} else if (TcnVendEventResultID.DO_OPEN == cEventInfo.m_lParam1) {   //开门
-						TcnUtilityUI.getToast(MainAct.this, "开门", 20).show();
+						TcnUtilityUI.getToast(MainAct.this, "open the door", 20).show();
 					}
 					else {
 

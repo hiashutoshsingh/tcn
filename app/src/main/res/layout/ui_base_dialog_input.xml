@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:gravity="center"
-        android:text="请输入"/>
+        android:text="please enter"/>
 
     <TextView
         android:id="@+id/dialog_start_text"

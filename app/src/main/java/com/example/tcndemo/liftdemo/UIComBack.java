@@ -9,7 +9,7 @@ import java.util.List;
 
 public class UIComBack {
 	private static final String TAG = "UIComBack";
-	public static String[] HEAT_COOL_OFF_SWITCH_SELECT = {"制冷","加热","关闭"};
+	public static String[] HEAT_COOL_OFF_SWITCH_SELECT = {"Refrigeration","heating","closure"};
 	private static UIComBack m_Instance = null;
 
 	private List<GropInfoBack> m_GrpShowListAll = new ArrayList<GropInfoBack>();
@@ -56,9 +56,9 @@ public class UIComBack {
 				mGropInfoBack.setID(i);
 				mGropInfoBack.setGrpID(info.getID());
 				if (info.getID() == 0) {
-					mGropInfoBack.setShowText("主柜");
+					mGropInfoBack.setShowText("main cabinet");
 				} else {
-					mGropInfoBack.setShowText("副柜"+info.getID());
+					mGropInfoBack.setShowText("Deputy cabinet"+info.getID());
 				}
 				m_GrpShowListAll.add(mGropInfoBack);
 			}
@@ -77,9 +77,9 @@ public class UIComBack {
 					mGropInfoBack.setID(i);
 					mGropInfoBack.setGrpID(info.getID());
 					if (info.getID() == 0) {
-						mGropInfoBack.setShowText("主柜");
+						mGropInfoBack.setShowText("main cabinet");
 					} else {
-						mGropInfoBack.setShowText("副柜"+info.getID());
+						mGropInfoBack.setShowText("Deputy cabinet"+info.getID());
 					}
 					m_GrpShowListElevator.add(mGropInfoBack);
 				}

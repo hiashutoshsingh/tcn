@@ -216,7 +216,7 @@ public class OutDialog extends Dialog {
         //iv_route.setBackgroundResource(0);
         iv_route.setImageResource(R.mipmap.lyric_search_pressed);
         outnum.setText("");
-        tv.setText("出货成功");
+        tv.setText("Shipment successful");
         tv_point.setText("");
         tv_point.setVisibility(View.GONE);
         handler.sendEmptyMessageDelayed(DISMISS_DIALOG, DISMISS_DIALOG_DELAYMILLIS);
@@ -229,7 +229,7 @@ public class OutDialog extends Dialog {
         iv_route.setBackgroundResource(0);
         iv_route.setImageResource(R.mipmap.shibai);
         outnum.setText("");
-        tv.setText("出货失败");
+        tv.setText("Shipment failed");
         tv_point.setText("");
         tv_point.setVisibility(View.GONE);
         handler.sendEmptyMessageDelayed(DISMISS_DIALOG, DISMISS_DIALOG_DELAYMILLIS);
